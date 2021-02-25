@@ -2,9 +2,9 @@
   <div class="container">
     <div :class="'brand ' + brand"></div>
     <div class="social">
-      <i alt="brand"
-        ><img class="icon" alt="social-brand" :src="require(`@/assets/icon-${brand}.svg`)"
-      /></i>
+      <i alt="brand">
+        <img class="icon" alt="social-brand" :src="require(`@/assets/icon-${brand}.svg`)" />
+      </i>
       <h5 class="user">@nathan</h5>
     </div>
     <div class="followers">
@@ -12,9 +12,9 @@
       <h2 class="text">followers</h2>
     </div>
     <div class="date">
-      <i alt="up-arrow" class="arrow"
-        ><img :src="require(`@/assets/icon-${isUp ? 'up' : 'down'}.svg`)"
-      /></i>
+      <i alt="up-arrow" class="arrow">
+        <img :src="require(`@/assets/icon-${isUp ? 'up' : 'down'}.svg`)" />
+      </i>
       <p :class="'text ' + color">{{ todayFollowers }} Today</p>
     </div>
   </div>
@@ -38,25 +38,32 @@ export default {
 
 <style lang="scss" scoped>
 @import '../styles/_colors.scss';
+
 .facebook {
   background: $facebook;
 }
+
 .twitter {
   background: $twitter;
 }
+
 .instagram {
   background: $instagram;
 }
+
 .youtube {
   background: $youtube;
 }
+
 .green {
-  color: $lime-green;
+  color: $lime-green !important;
   font-weight: bold;
 }
+
 .red {
-  color: $bright-red;
+  color: $bright-red !important;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -68,15 +75,19 @@ export default {
   background: $dark-desaturated-blue;
   border-radius: 10px;
   color: $white;
+  cursor: pointer;
+
   .brand {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 6;
     width: 100%;
     height: 6px;
+    margin: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
+
   .social {
     display: flex;
     flex-direction: row;
@@ -84,21 +95,26 @@ export default {
     align-items: center;
     width: 6.5rem;
     margin: 1rem 0;
+
     .icon {
       width: 20px;
       height: 20px;
     }
+
     .user {
       color: $desaturated-blue;
       font-size: 1rem;
       margin-bottom: 6px;
     }
   }
+
   .followers {
     text-align: center;
+
     .number {
       font-size: 5rem;
     }
+
     .text {
       font-size: 1rem;
       font-weight: 400;
@@ -107,12 +123,14 @@ export default {
       color: $desaturated-blue;
     }
   }
+
   .date {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
+
     .arrow {
       align-self: center;
       display: flex;
@@ -122,17 +140,21 @@ export default {
         height: 8px;
       }
     }
+
     .text {
       font-weight: 700;
     }
   }
 }
+
 .light .container {
   background: $light-grayish-blue;
   color: $dark-grayish-blue;
+
   .text {
     color: $dark-background;
   }
+
   .followers {
     color: $dark-background;
   }

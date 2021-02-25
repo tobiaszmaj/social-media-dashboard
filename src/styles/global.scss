@@ -19,10 +19,12 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   width: 100vw;
+  height: 100vh;
   overflow: auto;
 }
 
 .app {
   overflow: auto;
   transition: 0.4s all;
-}
+  height: 100%;
+} 
