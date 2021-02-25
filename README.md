@@ -1,24 +1,14 @@
-# social-media-dashboard
+# Social Media Dashboard
 
-## Project setup
-```
-yarn install
-```
+Admin Dashboard made with Vue.js.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+![Design preview](preview.jpg)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Demo
 
-### Lints and fixes files
-```
-yarn lint
-```
+Check out the demo! - 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technologies
+
+* [Vue.js](https://vuejs.org/)
+* [Sass](https://sass-lang.com/)
